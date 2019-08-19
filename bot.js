@@ -6,11 +6,11 @@ const Canvas = require('canvas')
 const fs = require("fs")
 const moment = require ("moment")
 const jimp = require ("jimp")
-const prefix = '!!!'
+const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`!!!help")
+client.user.setGame(`Hi`)
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -34,6 +34,7 @@ client.user.setGame(`!!!help")
   console.log('')
 });
 
+
 client.on('message', message => {
   if (message.channel.id === "612798308070457367") {
     message.react('☑')
@@ -42,5 +43,6 @@ client.on('message', message => {
       });
   }
 }); 
+
 
 client.login(process.env.BOT_TOKEN);
