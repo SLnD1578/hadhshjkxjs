@@ -37,9 +37,9 @@ client.user.setGame(`Hi`)
 
 client.on('message', message => {
   if (message.channel.id === "612798308070457367") {
-    message.react('☑')
+    message.react('✅')
       .then(() => {
-        message.react('🚫')
+        message.react('❌')
       });
   }
 }); 
