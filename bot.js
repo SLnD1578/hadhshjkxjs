@@ -45,4 +45,22 @@ client.on('message', message => {
 }); 
 
 
+
+client.on('message', message => {
+  if (message.channel.id === "612793839241003011") {
+    message.react('✅')
+      .then(() => {
+        message.react('❌')
+      });
+  }
+}); 
+
+
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
